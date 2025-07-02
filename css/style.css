@@ -193,20 +193,29 @@ input[type="search"]::-webkit-search-cancel-button {
 /* About Section */
 .about,
 .menu,
+.products,
 .contact {
   padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
+.products h2,
 .contact h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
+.products p {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
 .about h2 span,
 .menu h2 span,
+.products h2 span,
 .contact h2 span {
   color: var(--green-color);
 }
@@ -278,6 +287,20 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .menu .row .menu-card .menu-card-title {
   margin-top: 1.5rem auto 1rem;
+}
+
+/* Product Section */
+.products .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.products .product-card {
+  text-align: center;
+  border: 1px solid #666;
+  padding: 2rem;
 }
 
 /* Contact Section */
@@ -420,7 +443,7 @@ footer span {
 
   .navbar .search-form {
     width: 25%;
-    right: 9.5rem;
+    right: 9rem;
   }
 
   .navbar .search-form input {
