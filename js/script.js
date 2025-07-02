@@ -3,8 +3,9 @@ const hamburger = document.querySelector("#hamburger-menu");
 const docs = document;
 
 // Toggle sidebar visibility
-hamburger.onclick = () => {
+hamburger.onclick = (event) => {
   navbarNav.classList.toggle("active");
+  event.preventDefault();
 };
 
 // Toggle search form visibility
